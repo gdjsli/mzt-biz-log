@@ -21,7 +21,7 @@ public class LogRecordConfigureSelector extends AdviceModeImportSelector<EnableL
             case PROXY:
                 return new String[]{AutoProxyRegistrar.class.getName(), LogRecordProxyAutoConfiguration.class.getName()};
             case ASPECTJ:
-                return new String[]{LogRecordProxyAutoConfiguration.class.toString()};
+                return new String[]{LogRecordProxyAutoConfiguration.class.getName()};
             default:
                 return null;
         }
